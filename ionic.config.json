@@ -1,0 +1,7 @@
+{
+  "name": "AIS",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
