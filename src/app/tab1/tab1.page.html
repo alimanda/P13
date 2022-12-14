@@ -1,17 +1,148 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <div class="container">
+      <ion-item color="none" lines="none">
+        <ion-avatar class="avatar1" slot="start">
+          <img src="assets/unbin.jpeg" />
+        </ion-avatar>
+        <ion-label>
+          <div class="name"><b>Alimanda Sahbana</b></div>
+          <div class="jurusan">Sistem Informasi (S5)</div>
+          <div class="fakultas">Fakultas Informatika & Komputer</div>
+        </ion-label>
+        <ion-avatar class="avatar2" slot="end">
+          <img
+            src="https://inikpop.com/wp-content/uploads/2018/07/frankie.jpg"
+          />
+        </ion-avatar>
+      </ion-item>
+    </div>
+    <div class="kotak">
+      <div class="left">
+        <div class="ipk"><b>3.4</b></div>
+        <div>IP Komulatif</div>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="right">
+        <div class="sks"><b>21</b></div>
+        <div>SKS Tempuh</div>
+      </div>
+    </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content padding class="background">
+  <div class="box">
+    <ion-slides pager="false">
+      <ion-slide class="slide"
+        ><div class="box-title">
+          <div class="box-button">
+            <div>
+              <ion-button
+                class="button"
+                fill="clear"
+                (click)="navigateto()"
+                [roterlink]="['/tab4']"
+              >
+                <ion-icon name="calendar"></ion-icon>
+              </ion-button>
+              <div class="text-label"><p>Jadwal</p></div>
+            </div>
+            <div>
+              <ion-button
+                class="button"
+                fill="clear"
+                (click)="navigateto()"
+                [roterlink]="['/tab4']"
+              >
+                <ion-icon name="briefcase"></ion-icon>
+              </ion-button>
+              <div class="text-label"><p>Presensi</p></div>
+            </div>
+            <div>
+              <ion-button
+                class="button"
+                fill="clear"
+                (click)="navigateto()"
+                [roterlink]="['/tab4']"
+              >
+                <ion-icon name="clipboard"></ion-icon>
+              </ion-button>
+              <div class="text-label"><p>Nilai</p></div>
+            </div>
+          </div>
+          <div class="box-button">
+            <div>
+              <ion-button
+                class="button"
+                fill="clear"
+                (click)="navigateto()"
+                [roterlink]="['/tab4']"
+              >
+                <ion-icon name="bookmarks"></ion-icon>
+              </ion-button>
+              <div class="text-label"><p>Tugas</p></div>
+            </div>
+            <div>
+              <ion-button
+                class="button"
+                fill="clear"
+                (click)="navigateto()"
+                [roterlink]="['/tab4']"
+              >
+                <ion-icon name="book"></ion-icon>
+              </ion-button>
+              <div class="text-label"><p>KRSS/KRS</p></div>
+            </div>
+            <div>
+              <ion-button
+                class="button"
+                fill="clear"
+                (click)="navigateto()"
+                [roterlink]="['/tab4']"
+              >
+                <ion-icon name="school"></ion-icon>
+              </ion-button>
+              <div class="text-label"><p>TA/Wisuda</p></div>
+            </div>
+          </div>
+          <div class="box-button">
+            <div>
+              <ion-button
+                class="button"
+                fill="clear"
+                (click)="navigateto()"
+                [roterlink]="['/tab4']"
+              >
+                <ion-icon name="archive"></ion-icon>
+              </ion-button>
+              <div class="text-label"><p>Kegiatan</p></div>
+            </div>
+            <div>
+              <ion-button
+                class="button"
+                fill="clear"
+                (click)="navigateto()"
+                [roterlink]="['/tab4']"
+              >
+                <ion-icon name="albums"></ion-icon>
+              </ion-button>
+              <div class="text-label"><p>Biaya Kuliah</p></div>
+            </div>
+            <div>
+              <ion-button
+                class="button"
+                fill="clear"
+                (click)="navigateto()"
+                [roterlink]="['/tab4']"
+              >
+                <ion-icon name="chatbubbles"></ion-icon>
+              </ion-button>
+              <div class="text-label"><p>Kuesioner</p></div>
+            </div>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
 </ion-content>
